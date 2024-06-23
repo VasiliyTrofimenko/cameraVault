@@ -84,7 +84,7 @@ def main():
                             mega.login(email, password)
                             Folder = mega.find(folder)
                             mega.upload(current_video_file_path, Folder[0])
-                            r = requests.post("https://ntfy.sh/{topic}", data=f"Motion detected".encode(encoding='utf-8'))
+                            r = requests.post(f"https://ntfy.sh/{topic}", data=f"Motion detected".encode(encoding='utf-8'))
                             r.raise_for_status()
                         except requests.exceptions.HTTPError as err:
                             print(f"HTTP error occurred: {err}")
