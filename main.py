@@ -8,7 +8,7 @@ from config import email, password , urlRtsp ,topic,folder
 # RTSP stream URL
 urlRtsp = urlRtsp
 # Directory to save videos
-pathSaveImg = "C:/Users/alron/PycharmProjects/"
+pathSaveImg = "YourPath"
 # Camera ID
 idc = "3"
 
